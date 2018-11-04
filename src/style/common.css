@@ -1,0 +1,18 @@
+@import "~antd/dist/antd.css";
+.container {
+  display: flex;
+}
+.container .nav {
+  min-width: 210px;
+  height: calc(100vh);
+  border: 1px solid red;
+  background: #001529;
+}
+.container .main {
+  height: calc(100vh);
+  border: 1px solid green;
+}
+.container .content {
+  position: relative;
+  padding: 20px;
+}

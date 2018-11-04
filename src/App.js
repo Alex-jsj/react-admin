@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Row, Col } from "antd";
-import "./App.css";
+import "./style/common.css";
 
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -10,13 +10,13 @@ export default class Home extends Component {
   render() {
     return (
       <Fragment>
-        <Row>
-          <Col span="3">
+        <Row className="container">
+          <Col span="3" className="nav">
             <Nav />
           </Col>
-          <Col span="21">
+          <Col span="21" className="main">
             <Header />
-            <Row>Content</Row>
+            <Row className="content">{/* {this.props.children} */}</Row>
             <Footer />
           </Col>
         </Row>
