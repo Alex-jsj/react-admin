@@ -20,6 +20,8 @@ export default class Header extends Component {
     this.getWeatherApiData();
   }
 
+  componentWillUnmount() {}
+
   getWeatherApiData = () => {
     let city = "杭州";
     axios
