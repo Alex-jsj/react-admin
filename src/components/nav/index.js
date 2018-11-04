@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Menu, Icon } from "antd";
+import { Menu } from "antd";
 import "./index.css";
 import menuConfig from "../../config/menuConfig";
 

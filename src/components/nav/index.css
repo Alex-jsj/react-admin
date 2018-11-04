@@ -1,6 +1,8 @@
 .logo {
   line-height: 90px;
   padding-left: 20px;
+  white-space: nowrap;
+  background: #00274d;
 }
 .logo .logo-img {
   height: 35px;
