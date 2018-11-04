@@ -5,7 +5,7 @@ export default {
     return `${date.getFullYear()}-${(date.getMonth() + 1)
       .toString()
       .padStart(2, 0)}-${date
-      .getDay()
+      .getDate()
       .toString()
       .padStart(2, 0)} ${date
       .getHours()
@@ -17,6 +17,9 @@ export default {
       .getSeconds()
       .toString()
       .padStart(2, 0)}`;
-  }
+  },
   // 调用天气接口
+  getWeatherApiData:()=>{
+
+  }
 };

@@ -36,7 +36,7 @@
 }
 .header .breadcrumb .breadcrumb-title:after {
   position: absolute;
-  content: '';
+  content: "";
   left: 73px;
   top: 39px;
   border-top: 9px solid #ffffff;
@@ -51,7 +51,7 @@
   margin-right: 10px;
   vertical-align: middle;
 }
-.header .breadcrumb .weather .weather-img img {
+.header .breadcrumb .weather .weather-img {
   height: 15px;
 }
 .header .breadcrumb .weather .weather-detail {

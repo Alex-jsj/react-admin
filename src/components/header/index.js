@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col } from "antd";
 import Utils from "../../utils/utils";
+import axios from "../../axios";
 import "./index.css";
 export default class Header extends Component {
   state = {
@@ -16,7 +17,28 @@ export default class Header extends Component {
         sysTime
       });
     }, 1000);
+    this.getWeatherApiData();
   }
+
+  getWeatherApiData = () => {
+    let city = "杭州";
+    axios
+      .jsonp({
+        url: `http://api.map.baidu.com/telematics/v3/weather?location=${encodeURIComponent(
+          city
+        )}&output=json&ak=3p49MVra6urFRGOT9s8UBWr2`
+      })
+      .then(res => {
+        if (res.status === "success") {
+          let data = res.results[0].weather_data[0];
+          this.setState({
+            city: res.results[0].currentCity,
+            dayPic: data.dayPictureUrl,
+            temperature: data.temperature
+          });
+        }
+      });
+  };
 
   render() {
     return (
@@ -36,7 +58,12 @@ export default class Header extends Component {
           </Col>
           <Col span="20" className="weather">
             <span className="date">{this.state.sysTime}</span>
-            <span className="weather-detail">晴转多云</span>
+            <img className="weather-img" src={this.state.dayPic} alt="" />
+            <span className="weather-detail">
+              {this.state.city}
+              &nbsp;&nbsp;
+              {this.state.temperature}
+            </span>
           </Col>
         </Row>
       </div>
