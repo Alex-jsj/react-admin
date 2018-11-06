@@ -4,13 +4,13 @@
   background-color: #ffffff;
 }
 .header .header-top {
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   padding: 0 20px;
   text-align: right;
 }
 .header .header-top .logo {
-  line-height: 60px;
+  line-height: 50px;
   text-align: left;
   font-size: 18px;
 }
@@ -22,17 +22,16 @@
   margin-left: 5px;
 }
 .header .header-top a {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 .header .breadcrumb {
   height: 40px;
   line-height: 40px;
   padding: 0 20px;
-  border-top: 1px solid #f9c700;
+  border-top: 1px solid #1890ff;
 }
 .header .breadcrumb .breadcrumb-title {
-  text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 .header .breadcrumb .breadcrumb-title:after {
   position: absolute;
@@ -48,7 +47,7 @@
   font-size: 14px;
 }
 .header .breadcrumb .weather .date {
-  margin-right: 10px;
+  margin-right: 20px;
   vertical-align: middle;
 }
 .header .breadcrumb .weather .weather-img {

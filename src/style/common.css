@@ -1,4 +1,6 @@
 @import "~antd/dist/antd.css";
+/** 常用色值 **/
+/** 常用字体大小 **/
 .container {
   display: flex;
 }
@@ -7,9 +9,11 @@
   background: #001529;
 }
 .container .main {
-  height: calc(100vh);
+  background: #f1f3f5;
 }
 .container .content {
   position: relative;
-  padding: 20px;
+  margin: 20px;
+  min-height: calc(100vh - 190px);
+  background: #fff;
 }

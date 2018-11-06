@@ -11,7 +11,7 @@ export default class Header extends Component {
     this.setState({
       userName: "陈小银"
     });
-    setInterval(() => {
+    this.setSecond = setInterval(() => {
       let sysTime = Utils.formateDate(new Date().getTime());
       this.setState({
         sysTime
@@ -20,8 +20,11 @@ export default class Header extends Component {
     this.getWeatherApiData();
   }
 
-  componentWillUnmount() {}
+  componentWillUnmount() {
+    clearInterval(this.setSecond);
+  }
 
+  // 百度天气
   getWeatherApiData = () => {
     let city = "杭州";
     axios

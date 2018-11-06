@@ -5,8 +5,9 @@ import "./style/common.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Nav from "./components/nav";
+import Home from "./views/home";
 
-export default class Home extends Component {
+export default class App extends Component {
   render() {
     return (
       <Fragment>
@@ -16,7 +17,9 @@ export default class Home extends Component {
           </Col>
           <Col span="21" className="main">
             <Header />
-            <Row className="content">{/* {this.props.children} */}</Row>
+            <Row className="content">
+              <Home />
+            </Row>
             <Footer />
           </Col>
         </Row>

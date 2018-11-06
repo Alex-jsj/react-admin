@@ -1,18 +1,18 @@
 @import "~antd/dist/antd.css";
+@import "./default.less";
 .container {
-    display: flex;
-    .nav {
-        // width: 15%;
-        // min-width: 210px;
-        height: calc(100vh);
-        background: #001529;
-    }
-    .main {
-        // flex: 1;
-        height: calc(100vh);
-    }
-    .content {
-        position: relative;
-        padding: 20px;
-    }
+  display: flex;
+  .nav {
+    height: calc(100vh);
+    background: #001529;
+  }
+  .main {
+    background: @colorL;
+  }
+  .content {
+    position: relative;
+    margin: 20px;
+    min-height: calc(~"100vh - 190px");
+    background: #fff;
+  }
 }
