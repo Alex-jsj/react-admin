@@ -1,85 +1,85 @@
 const menuList = [
   {
     title: "首页",
-    path: "/home"
+    path: "/admin/home"
   },
   {
     title: "UI",
-    path: "/ui",
+    path: "/admin/ui",
     children: [
       {
         title: "按钮",
-        path: "/ui/buttons"
+        path: "/admin/ui/buttons"
       },
       {
         title: "弹框",
-        path: "/ui/modals"
+        path: "/admin/ui/modals"
       },
       {
         title: "Loading",
-        path: "/ui/loadings"
+        path: "/admin/ui/loadings"
       },
       {
         title: "通知提醒",
-        path: "/ui/notification"
+        path: "/admin/ui/notification"
       },
       {
         title: "全局Message",
-        path: "/ui/messages"
+        path: "/admin/ui/messages"
       },
       {
         title: "Tab页签",
-        path: "/ui/tabs"
+        path: "/admin/ui/tabs"
       },
       {
         title: "图片画廊",
-        path: "/ui/gallery"
+        path: "/admin/ui/gallery"
       },
       {
         title: "轮播图",
-        path: "/ui/carousel"
+        path: "/admin/ui/carousel"
       }
     ]
   },
   {
     title: "表单",
-    path: "/form",
+    path: "/admin/form",
     children: [
       {
         title: "登录",
-        path: "/form/login"
+        path: "/admin/form/login"
       },
       {
         title: "注册",
-        path: "/form/reg"
+        path: "/admin/form/reg"
       }
     ]
   },
   {
     title: "表格",
-    path: "/table",
+    path: "/admin/table",
     children: [
       {
         title: "基础表格",
-        path: "/table/basic"
+        path: "/admin/table/basic"
       },
       {
         title: "高级表格",
-        path: "/table/high"
+        path: "/admin/table/high"
       }
     ]
   },
   {
     title: "富文本",
-    path: "/rich"
+    path: "/admin/rich"
   },
   {
     title: "城市管理",
-    path: "/city"
+    path: "/admin/city"
   },
   {
     title: "订单管理",
-    path: "/order",
+    path: "/admin/order",
     btnList: [
       {
         title: "订单详情",
@@ -93,33 +93,33 @@ const menuList = [
   },
   {
     title: "员工管理",
-    path: "/user"
+    path: "/admin/user"
   },
   {
     title: "车辆地图",
-    path: "/bikeMap"
+    path: "/admin/bikeMap"
   },
   {
     title: "图标",
-    path: "/charts",
+    path: "/admin/charts",
     children: [
       {
         title: "柱形图",
-        path: "/charts/bar"
+        path: "/admin/charts/bar"
       },
       {
         title: "饼图",
-        path: "/charts/pie"
+        path: "/admin/charts/pie"
       },
       {
         title: "折线图",
-        path: "/charts/line"
+        path: "/admin/charts/line"
       }
     ]
   },
   {
     title: "权限设置",
-    path: "/permission"
+    path: "/admin/permission"
   }
 ];
 export default menuList;

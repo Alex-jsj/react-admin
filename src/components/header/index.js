@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col } from "antd";
-import Utils from "../../utils/utils";
-import axios from "../../axios";
+import Utils from "src/utils/utils";
+import axios from "src/axios";
 import "./index.css";
 export default class Header extends Component {
   state = {

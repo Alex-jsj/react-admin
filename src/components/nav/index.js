@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
 import { Menu } from "antd";
 import "./index.css";
-import menuConfig from "../../config/menuConfig";
+import menuConfig from "src/config/menuConfig";
+import { NavLink } from "react-router-dom";
 
 const SubMenu = Menu.SubMenu;
 
@@ -26,7 +27,7 @@ export default class Nav extends Component {
       }
       return (
         <Menu.Item title={item.title} key={item.path}>
-          {item.title}
+          <NavLink to={item.path}>{item.title}</NavLink>
         </Menu.Item>
       );
     });
